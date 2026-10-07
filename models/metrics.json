@@ -1,0 +1,152 @@
+{
+    "version": "2.0.0",
+    "training_timestamp": "2026-10-06T23:23:50.388584",
+    "dataset_records": 2400,
+    "best_model": "Hist Gradient Boosting",
+    "best_model_metrics": {
+        "R2": 0.9772,
+        "CV_R2_Mean": 0.9747,
+        "CV_R2_Std": 0.0051,
+        "MAE": 34919.73,
+        "RMSE": 50427.79,
+        "MAPE": 5.8
+    },
+    "quantile_uncertainty": {
+        "nominal_coverage_pct": 80.0,
+        "empirical_coverage_pct": 68.12,
+        "avg_interval_width": 132076.43
+    },
+    "all_models": {
+        "Linear Regression": {
+            "R2": 0.9203,
+            "CV_R2_Mean": 0.9154,
+            "CV_R2_Std": 0.0077,
+            "MAE": 66247.37,
+            "RMSE": 94173.92,
+            "MAPE": 13.52
+        },
+        "Ridge Regression": {
+            "R2": 0.9176,
+            "CV_R2_Mean": 0.9116,
+            "CV_R2_Std": 0.0097,
+            "MAE": 65951.34,
+            "RMSE": 95752.37,
+            "MAPE": 12.78
+        },
+        "Random Forest": {
+            "R2": 0.9601,
+            "CV_R2_Mean": 0.9505,
+            "CV_R2_Std": 0.0136,
+            "MAE": 44307.3,
+            "RMSE": 66615.13,
+            "MAPE": 7.45
+        },
+        "Gradient Boosting": {
+            "R2": 0.9749,
+            "CV_R2_Mean": 0.973,
+            "CV_R2_Std": 0.0068,
+            "MAE": 35823.26,
+            "RMSE": 52895.64,
+            "MAPE": 5.98
+        },
+        "Hist Gradient Boosting": {
+            "R2": 0.9772,
+            "CV_R2_Mean": 0.9747,
+            "CV_R2_Std": 0.0051,
+            "MAE": 34919.73,
+            "RMSE": 50427.79,
+            "MAPE": 5.8
+        }
+    },
+    "feature_bounds": {
+        "Area(sqft)": {
+            "min": 650.0,
+            "max": 5200.0,
+            "p01": 699.8000000000001,
+            "p99": 5200.0,
+            "mean": 2116.0583333333334,
+            "median": 1920.0
+        },
+        "Rooms": {
+            "min": 1.0,
+            "max": 6.0,
+            "p01": 1.0,
+            "p99": 6.0,
+            "mean": 3.1345833333333335,
+            "median": 3.0
+        },
+        "Bathrooms": {
+            "min": 1.0,
+            "max": 5.0,
+            "p01": 1.0,
+            "p99": 5.0,
+            "mean": 2.46625,
+            "median": 2.0
+        },
+        "Floors": {
+            "min": 1.0,
+            "max": 3.0,
+            "p01": 1.0,
+            "p99": 3.0,
+            "mean": 1.69625,
+            "median": 2.0
+        },
+        "YearBuilt": {
+            "min": 1960.0,
+            "max": 2024.0,
+            "p01": 1961.0,
+            "p99": 2024.0,
+            "mean": 1997.7954166666666,
+            "median": 2001.0
+        },
+        "Parking": {
+            "min": 0.0,
+            "max": 3.0,
+            "p01": 0.0,
+            "p99": 3.0,
+            "mean": 1.415,
+            "median": 1.0
+        },
+        "Location": {
+            "allowed": [
+                "Downtown",
+                "Rural",
+                "Suburban",
+                "Urban"
+            ]
+        },
+        "Condition": {
+            "allowed": [
+                "Excellent",
+                "Fair",
+                "Good"
+            ]
+        }
+    },
+    "feature_names": [
+        "Area(sqft)",
+        "Rooms",
+        "Bathrooms",
+        "Floors",
+        "YearBuilt",
+        "Parking",
+        "Age",
+        "BathToBedRatio",
+        "LivingDensity",
+        "Location_Rural",
+        "Location_Suburban",
+        "Location_Urban",
+        "Condition_Fair",
+        "Condition_Good"
+    ],
+    "top_feature_importances": {
+        "Area(sqft)": 0.37253231982026186,
+        "Location_Suburban": 0.22707986502772232,
+        "Location_Rural": 0.21826142880291888,
+        "Condition_Fair": 0.06461569916151817,
+        "Condition_Good": 0.04805897470313767,
+        "Location_Urban": 0.04713168755628503,
+        "Bathrooms": 0.010158571493813676,
+        "YearBuilt": 0.009351981141230972
+    }
+}
