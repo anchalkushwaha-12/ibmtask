@@ -139,3 +139,15 @@ streamlit run frontend/app.py
 python reports/generate_report.py
 ```
 *Report generated at `reports/final_report.html`.*
+
+## ☁️ Deploy to Streamlit Community Cloud
+
+1. Push this repository to GitHub.
+2. Sign in at [Streamlit Community Cloud](https://share.streamlit.io/) with the GitHub account that can access the repository.
+3. Select **Create app** and configure:
+   - **Repository:** `anchalkushwaha-12/ibmtask`
+   - **Branch:** `main`
+   - **Main file path:** `frontend/app.py`
+4. Select **Deploy**. Community Cloud installs dependencies from the root `requirements.txt`.
+
+The Streamlit app includes the saved model and can run predictions without a separate Flask server. The scikit-learn version is pinned to match the version used to save the model.
